@@ -1,9 +1,3 @@
 def solution(a, b):
-    answer = 0
-    if a<=b:
-        for i in range(a, b+1):
-            answer += i
-    else:
-        for i in range(a, b-1, -1):
-            answer += i
+    answer = sum(range(min(a,b),max(a,b)+1))
     return answer
