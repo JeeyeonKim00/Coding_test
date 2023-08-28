@@ -1,9 +1,5 @@
 def solution(s):
-    lst = []
-    for i in range(len(s)):
-        lst.append(s[i])
-    lst.sort(reverse=True)
-    answer =''
-    for k in lst:
-        answer += k
-    return answer
+    lst = list(s)
+    sorted_lst = sorted(lst, reverse=True)
+    return ''.join(sorted_lst)
+    # return answer
