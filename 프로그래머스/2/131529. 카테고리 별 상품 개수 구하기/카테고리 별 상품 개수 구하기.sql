@@ -1,0 +1,6 @@
+-- 코드를 입력하세요
+SELECT CODE, COUNT(*)
+FROM (SELECT *,SUBSTR(product_code,1,2) AS CODE
+        FROM PRODUCT) A
+GROUP BY CODE
+ORDER BY CODE ;
