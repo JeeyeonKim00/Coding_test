@@ -1,0 +1,7 @@
+-- 코드를 입력하세요
+SELECT DISTINCT(C.car_id)
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY H,CAR_RENTAL_COMPANY_CAR  C
+WHERE H.car_id = C.car_id
+AND H.start_date LIKE '%2022-10%'
+AND C.car_type = '세단'
+ORDER BY car_id DESC;
